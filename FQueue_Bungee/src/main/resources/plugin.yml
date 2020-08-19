@@ -1,0 +1,4 @@
+name: FqueBungee
+version: ${project.version}
+author: Froad
+main: club.froad.queue.FQueue

@@ -1,0 +1,9 @@
+name: Fque
+version: ${project.version}
+main: club.froad.queue.FQueue
+authors: [Froad]
+description: Queue
+
+commands:
+  joinqueue:
+    aliases: [queue]

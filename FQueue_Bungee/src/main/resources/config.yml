@@ -1,0 +1,41 @@
+queue-servers:
+  - 'Lobby'
+
+settings:
+  lose-queue-pos: false # lose queue position if server goes offline
+
+queues:
+  Revival:
+    server-name: 'Revival'
+    queue-limit: 10
+    send-time: 1 # sec
+    reminder-message:
+      header: ' ' # leave blank for none
+      message:
+        - '&6You are currently position &e%pos% &6out of &e%max%&6.'
+        - '&7&oRanks get higher priority in the queue, purchase at'
+        - '&estore.pvpcafe.net&7.'
+        - '&7&oYou can leave the queue by executing: /leavequeue'
+      whitelist-message: '&cThe server you''re queued for is currently offline.'
+      footer: ' '
+      time: 5 # 1-5 sec
+
+messages:
+  prefix: '&dServer&e > '
+  no-perms: '&cNo permissions!'
+  sending: '&7Sending you to the server &e%servername%&7.'
+  join-queue: '&7You have been added to the &e%name% &7queue. '
+  leave-queue: '&7You left the &e%name% &7queue.'
+  not-in-queue: '&7You are not in a queue.'
+  already-in-queue: '&7You are already in a queue.'
+  no-queue: '&7There is no queue with that name.'
+  queue-full: '&cThis queue is full!'
+  server-full: '&cServer is full!'
+
+ranks:
+  staff:
+    permission: 'staff.perm'
+    priority: 2
+  premium:
+    permission: 'premium.perm'
+    priority: 1
