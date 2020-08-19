@@ -75,7 +75,6 @@ public class QueueExecutor {
                                                 .replaceAll("%servername%", queue.getQueueServer().getName()));
 
                                     }else{
-                                        System.out.println("server whitelisted");
                                     }
 
                                 }else{
@@ -83,7 +82,6 @@ public class QueueExecutor {
                                 }
 
                             }else{
-                                System.out.println("server offline");
                                 if (losePos){
                                     queue.getPlayers().forEach(lose -> queueManager.leaveQueue(queuePlayer.getPlayer()));
                                 }
